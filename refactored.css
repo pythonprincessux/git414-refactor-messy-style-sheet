@@ -22,6 +22,7 @@
   --radius-card: 8px;
 }
 
+/* Foundation: document defaults */
 body {
   margin: 0;
   background: white;
@@ -61,12 +62,12 @@ header {
   border-radius: 4px;
 }
 
-.site-header nav ul li a:hover {
+.site-header :where(nav ul li) a:hover {
   background: #ffc627;
   color: #191919;
 }
 
-.site-header nav ul li a[aria-current="page"] {
+.site-header :where(nav ul li) a[aria-current="page"] {
   background: #ffc627;
   color: #191919;
 }

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Refactor Comparison</title>
+<link rel="stylesheet" href="refactored.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Refactor Practice</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#cards">Sessions</a></li>
+        <li><a href="#notices">Notices</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <h1>Compare the same page before and after restyling messy stylesheet.</h1>
+      <p>Check that the colors, spacing, and component styles stay consistent.</p>
+      <a class="button" href="#cards">Explore sessions</a>
+      <a class="btn" href="#notices">Read notices</a>
+      <button type="button">Sample button</button>
+    </section>
+
+    <section class="section" id="cards">
+      <h2>Three card variations</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Standard card</h3>
+          <p>A repeated content pattern with a border and rounded corners.</p>
+          <a href="#notices">Read more</a>
+        </article>
+
+        <article class="event-card">
+          <h3>Event card</h3>
+          <p>This variation should share the standard card appearance.</p>
+          <a href="#notices">View event</a>
+        </article>
+
+        <article class="speaker-card">
+          <h3>Speaker card</h3>
+          <p>This variation should also have the same card appearance.</p>
+          <a href="#notices">View speaker</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="notices">
+      <h2>Three notice variations</h2>
+
+      <div class="callout">
+        <h3>Callout</h3>
+        <p>Check the pale background, gold border, and padding.</p>
+      </div>
+
+      <div class="note">
+        <h3>Note</h3>
+        <p>This should have the same appearance as the callout.</p>
+      </div>
+
+      <div class="warning">
+        <h3>Warning</h3>
+        <p>This should keep the original stylesheet's notice appearance.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Local CSS comparison page. No personalinformation is collected or stored.</p>
+    <a href="#home">Return to top</a>
+  </footer>
+</body>
+</html>
