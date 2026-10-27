@@ -95,19 +95,11 @@ main {
   color: #222222;
 }
 
-.button {
-  display: inline-block;
-  background: #8c1d40;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* Components: shared link-button appearance */
+.button,
 .btn {
   display: inline-block;
-  background: #8c1d40;
+  background: var(--color-brand);
   color: white;
   padding: 12px 18px;
   border-radius: 4px;
