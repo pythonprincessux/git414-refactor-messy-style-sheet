@@ -21,6 +21,7 @@
   --radius-small: 4px;
   --radius-card: 8px;
 }
+
 body {
   margin: 0;
   background: white;
@@ -102,7 +103,7 @@ main {
   background: var(--color-brand);
   color: white;
   padding: 12px 18px;
-  border-radius: 4px;
+  border-radius: var(--radius-small);
   text-decoration: none;
   font-weight: bold;
 }
@@ -111,7 +112,7 @@ button {
   background: #8c1d40;
   color: white;
   padding: 12px 18px;
-  border-radius: 4px;
+  border-radius: var(--radius-small);
   border: 0;
   font-weight: bold;
 }
@@ -130,25 +131,14 @@ button:hover {
   margin: 32px 0;
 }
 
-.card {
-  background: white;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-.event-card {
-  background: white;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  padding: 20px;
-}
-
+/* Shared card component family */
+.card,
+.event-card,
 .speaker-card {
   background: white;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--space-medium);
 }
 
 .card h3,
@@ -165,25 +155,14 @@ button:hover {
   font-weight: bold;
 }
 
-.callout {
-  background: #fff8df;
-  border-left: 6px solid #ffc627;
-  padding: 20px;
-  margin: 32px 0;
-}
-
-.note {
-  background: #fff8df;
-  border-left: 6px solid #ffc627;
-  padding: 20px;
-  margin: 32px 0;
-}
-
+/* Shared notice component family */
+.callout,
+.note,
 .warning {
-  background: #fff8df;
-  border-left: 6px solid #ffc627;
-  padding: 20px;
-  margin: 32px 0;
+  background: var(--color-notice);
+  border-left: 6px solid var(--color-accent);
+  padding: var(--space-medium);
+  margin: var(--space-section) 0;
 }
 
 form {
